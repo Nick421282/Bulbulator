@@ -1,0 +1,313 @@
+*{
+    margin:0;
+}
+body{
+    background-image: url(157930550.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* .header{
+    padding: 10px 5%;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 5vw;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+ }  */
+/* header>*{
+    display: inline-block;
+    width:450px;
+}
+.pustota{
+    width:10%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    margin:0 10px;
+} */
+.banner{
+    padding: 20% 5%;
+    color: white;
+    font-size: 30px;
+}
+.post{
+    padding: 10px 5%;
+    text-align: center;
+    background-color:white;
+}
+.post>*{
+    display: inline-block;
+    width:450px;
+    font-size:30px;
+    vertical-align: middle;
+}
+.razryv{
+    height:700px;
+}
+#final{
+    padding:10% 20%;
+    /* background-image: url(tile_background.png); */
+    background-color: #050e2e;
+    background-attachment: fixed;
+}
+#final>div{
+    padding: 10px;
+    background-color: white;
+    font-size:30px;
+    text-align: center;
+    border: 4px solid black;
+}
+footer{
+    background-color:black;
+    padding:10px 0;
+    text-align: center;
+    color:white;
+}
+#zagolovok { 
+color:#B22222;
+font-size: 280%;
+font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* @media (min-width: 320px) and (max-width: 700px){
+    .burger-menu{
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 20px;
+    }
+    .burger-menu::before,  .burger-menu::after {
+      content: '';
+      background: black;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+    }
+    .burger-menu::before{
+      top:0;
+    }
+    .burger-menu::after{
+      bottom:0;
+    }
+    .burger-menu span {
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+    }
+    .main-nav{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 50vw;
+      height: 100vh;
+      background-color: #9090bd;
+      transform: translateX(-100%);
+    }
+    .nav-list{
+      flex-direction: column;
+      text-align: right;
+
+    }
+   */
+  /* class active это трансформация бургер-меню( из трёх полосочек в крестик) */
+  /* .burger-menu.active {
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.4s ease;
+  }
+  
+  .burger-menu.active::before {
+    transform: rotate(45deg);
+    top:9px;
+    transition: 0.4s ease;
+  }
+  .burger-menu.active::after {
+    transform: rotate(-45deg);
+    bottom:9px;
+    transition: 0.4s ease;
+  }
+  
+  .burger-menu.active span {
+    transform: scale(0);
+  
+  }
+  
+  .main-nav.active {
+    transform: translate(0);
+    transition: 0.4s ease;
+  }
+} */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+    border: 1px solid #fff;
+    align-items: center;
+}
+
+.header__logo {
+    width: 5vw;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    list-style: none;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    /*Бургер*/
+    .burger-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        transition: 0.3s ease;
+    }
+
+    .burger-menu::before,
+    .burger-menu::after {
+        content: ''; /* пустой контент */
+        background: #fff; /*цвет бургера*/
+        position: absolute; /* позиция для общего блока*/
+        width: 100%; /* ширина*/
+        height: 2px; /* толщина полосок бургера */
+        transition: 0.3s ease;
+    }
+
+    .burger-menu::before {
+        top: 0; /* расположение верхней линии бургера */
+    }
+
+    .burger-menu span { /*средняя линия в виде span*/
+        background: #fff;
+        position: absolute; 
+        width: 100%;
+        top: 9px;
+        height: 2px; 
+    }
+    .burger-menu::after {
+        bottom: 0; /* расположение нижней линии бургера */
+    }
+
+
+    /*Меню*/
+    .main-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #272727;
+        border: 1px solid #fff;
+        padding: 20px 10px;
+        transform: translateX(100%);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    /* active */
+
+    .burger-menu.active {
+        z-index: 3;
+        transform: translateX(-40vw);
+        transition: 0.3s ease;
+    }
+
+    .burger-menu.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        transition: 0.3s ease;
+    }
+    .burger-menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: 0.3s ease;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .main-nav.active {
+       transform: translate(0);
+       transition: 0.3s ease;
+    }
+
+
+}
+.image{
+    width:250px;
+    }
+    .slick-slider{
+        display: flex !important;
+        align-items: center;
+    }
+    .carousel_item{
+        display: flex !important;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .slick-dots{
+        display: none;
+        }
+        .carousel {
+            background-color: rgb(252, 254, 255);
+            padding: 3%;
+        }
+   h2 {
+     /* position: relative; */
+    margin: auto;
+    background-color: #fff;
+   }
+    .text {
+        font-size: 130%;
+    }
+    .images {
+        width:550px;
+           
+    }
+    /* .one{
+        display: flex;
+    } */
+     .imagenus{
+        /* width: 30vw;
+      height: 40vh; */
+      width:550px;
+      /* float: right;  */
+      /* margin: 7px 0 7px 7px; */
+      
+    }
+    /* .textus{
+        font-size: 120%;
+   
+    }   */
+    figcaption {
+        font-size: 50%;
+    }
+    .leftimg {
+        float:left; /* Выравнивание по левому краю */
+        margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+        width:132; 
+        height:174;
+        font-size: 60%;
+       }
+       /* .rightimg  {
+         float: right;   Выравнивание по правому краю   
+        margin: 7px 0 7px 7px;   Отступы вокруг картинки 
+       }  */
