@@ -2,44 +2,76 @@
     margin:0;
 }
 body{
- background-image: url(images/Rectangle_3.jng);
+ background-image: url(images/paper.jpg);
  background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+.galery{
+    display: flex;
+    width:20%;
+    height:10%; 
+     margin: 4px 4px 4px 0; 
+    padding: 1px 5%; 
+    
+ 
+}
 header {
-    background-color: rgb(145, 159, 153);
+    /* background-image: url(images/Rectangle_3.jng); */
+    background-color: rgb(59, 50, 183);
     display: flex;
     justify-content: space-between;
     padding: 3vh 5vw;
     border: 1px solid #fff;
     align-items: center;
 }
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#dbf3ff;
+}
 .razryv{
     height:400px;
 }
+.razryv2{
+    height:200px;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .navigator_list{  
+    
     display: flex;
     justify-content: space-between;
     gap: 2vw;
     list-style: none;
-    width: 50vw;
-    height: 20vh;
-    /* border: 1px solid #fff; */
+    /* width: 50px;
+    height: 50px; */
+    /* border: 1px solid #fff; */  
+}
+a{
+    color:#dbf3ff;
 }
 
 /* Star night  */
 
 .star_photo{
-    width:560px;
+    width:25%;
     float: left;
 }
 .text_star{
-    float:right; /* Выравнивание по левому краю */
-        margin: 4px 4px 4px 0; /* Отступы вокруг картинки */
-        width:590px; 
-        height:220px;
-        font-size: 120%;
+    float:right; 
+        margin: 4px 4px 4px 0; 
+        width:70%; 
+        height:100%;
+        font-size: 100%;
+}
+.text_star2{
+        float:left;  
+        margin: 4px 4px 4px 0; 
+        width:90%; 
+        height:100%;
+        font-size: 100%;
+        padding: 10px 5%;
 }
 .m_star{
     display: inline-block;
@@ -48,20 +80,29 @@ header {
     padding: 10px 5%;
     text-align: center;
     background-color:rgb(82, 124, 188);
+   
 }
 
 /* Mona Liza */
 
 .liza_photo{
-    width:560px;
+    width:20%;
     float: left;
 }
 .text_liza{
     float:right; 
     margin: 4px 4px 4px 0; 
-        width:50%; 
-        height:10%;
-        font-size: 120%;
+        width:70%; 
+        height:100%;
+        font-size: 100%;
+}
+.text_liza2{
+    float:left;  
+    margin: 4px 4px 4px 0; 
+    width:90%; 
+    height:100%;
+    font-size: 100%;
+    padding: 10px 5%;
 }
 .m_liza{
     
@@ -76,15 +117,23 @@ header {
 /* Jesus */
 
 .jesus_photo{
-    width:510px; 
+    width:20%; 
     float: left;
 }
 .text_jesus{
     float:right; 
     margin: 4px 4px 4px 0;
-        width:50%; 
-        height:10%;
-        font-size: 120%;
+        width:70%; 
+        height:100%;
+        font-size: 100%;
+}
+.text_jesus2{
+    float:left;  
+    margin: 4px 4px 4px 0; 
+    width:90%; 
+    height:100%;
+    font-size: 100%;
+    padding: 10px 5%;
 }
 .m_jesus{
     display: inline-block;
@@ -98,7 +147,7 @@ header {
 /* Forest in rain */
 
 .rain_photo{
-    width:450px; 
+    width:20%; 
     float: left;
 }
 .m_rain{
@@ -112,15 +161,23 @@ header {
 .text_rain{
     float:right; 
     margin: 4px 4px 4px 0;
-    width:50%; 
-    height:10%;
-    font-size: 120%;
+    width:70%; 
+    height:100%;
+    font-size: 100%;
+}
+.text_rain2{
+    float:left;  
+    margin: 4px 4px 4px 0; 
+    width:90%; 
+    height:100%;
+    font-size: 100%;
+    padding: 10px 5%;
 }
 
 /* ninth wave */
 
 .val_photo{
-    width:420px; 
+    width:20%; 
     float: left;
 }
 .m_val{
@@ -134,35 +191,65 @@ header {
 .text_val{
     float:right; 
     margin: 4px 4px 4px 0;
-    width:50%; 
-    height:10%;
-    font-size: 120%;
+    width:70%; 
+    height:100%;
+    font-size: 100%;
+}
+.text_val2{
+    float:left;  
+    margin: 4px 4px 4px 0; 
+    width:90%; 
+    height:100%;
+    font-size: 100%;
+    padding: 10px 5%;
 }
 
 /* footer */
 
-footer{
-    background-color:rgb(184, 127, 88);
+.end{
+    background-color: rgb(59, 50, 183);
+    /* background-color:rgb(184, 127, 88); */
     /* padding:10px 0; */
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 200%; */
     border: 1px solid #fff;
+    padding:10% 5%;
 }
-/* .text_used{
-   
-    float:right;
-    margin: 4px 4px 4px 0; 
-    width:30%; 
-    height:10%;
-    font-size: 100%;
+.importent{
+    display: flex;
+align-items: flex-start;
+
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-} */
+}
+.text_used{
+    float: right;
+    margin: 4px 4px 4px 0; 
+    width:40%; 
+    height:70%;
+    font-size: 110%;
+    /* text-align:center; */
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
 .text_contact{
     list-style: none;
-    float: left; 
+    /* float: left;  */
     margin: 4px 4px 4px 0; 
     width:20%; 
-    height:10%;
-    font-size: 100%;
+    height:100%;
+    font-size: 110%;
+    /* text-align: justify; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    justify-content: center;
+align-items: center;
+}
+footer{
+    background-color:rgb(224, 245, 245);
+    padding:10px 0;
     text-align: center;
+    color:rgb(0, 0, 0);
 }
