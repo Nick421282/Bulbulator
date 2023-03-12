@@ -8,23 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="banner">
         
-        <h1>В мире исскуства</h1>
-        <nav> 
-            <ul class="navigator_list">
-                <li class="list_item"><a href="#star"><b>Звёздная ночь</b></a></li>
-                <li class="list_item"><a href="#liza"><b>Мона Лиза</b></a></li>
-                <li class="list_item"><a href="#jesus"><b>Преображение</b></a></li>
-                <li class="list_item"><a href="#rain"><b>Дождь в дубовом лесу</b></a></li>
-                <li class="list_item"><a href="#val"><b>Девятый вал</b></a></li>
-                <li class="list_item"><a href="#contact"><b>Контакты</b></a></li>
-            </ul>
-        </nav>
-        <!-- <div class="galery"> -->
-            <img src="images/Rectangle_3.jpg" alt="" class="galery">
-        <!-- </div> -->
+            <div class="container">
+                <h1>
+                    В мире исскуства
+                </h1>
+                <nav> 
+                    <ul class="navigator_list">
+                        <li class="list_item"><a class="scroll" href="#star"><b>Звёздная ночь</b></a></li>
+                        <li class="list_item"><a class="scroll" href="#liza"><b>Мона Лиза</b></a></li>
+                        <li class="list_item"><a class="scroll" href="#jesus"><b>Преображение</b></a></li>
+                        <li class="list_item"><a class="scroll" href="#rain"><b>Дождь в дубовом лесу</b></a></li>
+                        <li class="list_item"><a class="scroll" href="#val"><b>Девятый вал</b></a></li>
+                        <li class="list_item"><a class="scroll" href="#contact"><b>Контакты</b></a></li>
+                    </ul>
+                </nav>
+                <!-- <a class="button" href="#">КНОПКА</a> -->
+            </div>
+        
+        
     </header>
+    <!-- <div class="registration">
+        
+        <form>
+            <h2 class="h2">Регистрация</h2>
+            <input class='my-input' name='text' type='number' placeholder='почта'>
+            <input class='my-input' name='text' type='password' placeholder='пароль'>
+            <button type="button" class=".btn">Войти</button>
+        </form>
+    </div> -->
     <main>
         <div class="razryv2"></div>
         <article class="m_star" id="star">     
@@ -80,9 +93,6 @@
                                  попытавшись изобразить большие звёзды. Увы, это был очередной провал, 
                                  и на этот раз с меня хватит».
                 </p>
-                    
-        
-
         </article>
         <div class="razryv"></div>
         <article class="m_liza" id="liza">         
@@ -273,7 +283,7 @@
     <li>Отзывы</li>
     <li>Новости</li>
 </ul>
-        
+        <!-- <p class="reges">Регистрация</p> -->
          <p class="text_used">
             Все представленные на сайте материалы
             предназначены для использования в 
@@ -285,4 +295,5 @@
     <footer>
         ©2023 Все права принадлежат мне ;)
     </footer>
+    <script src="script.js"></script>
 </body>
