@@ -17,7 +17,23 @@ function handle() {
         input_values.push(inputs[i].value);
     }
 }
-// let media = window.matchMedia('(max-width: 1224px)');
-// if (media.matches) {
-//     alert('Ширина экрана не превышает 1224 пикселя');
-// }
+// Бургер
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+// karusel
+
+$(document).ready(function () {
+    $('.slider').bxSlider();
+});
+// $(document).ready(function () {
+//     $('.slider').bxSlider({
+//         pagerCustom: '.slider-nav',
+//         infiniteLoop: true,
+//         hideControlOnEnd: true,
+//     });
+// });

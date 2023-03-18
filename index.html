@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Galery </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
     <header class="banner">
@@ -14,6 +17,12 @@
                 <h1>
                     В мире исскуства
                 </h1>
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
                 <nav> 
                     <ul class="navigator_list">
                         <li class="list_item"><a class="scroll" href="#star"><b>Звёздная ночь</b></a></li>
@@ -24,7 +33,7 @@
                         <li class="list_item"><a class="scroll" href="#contact"><b>Контакты</b></a></li>
                     </ul>
                 </nav>
-                <!-- <a class="button" href="#">КНОПКА</a> -->
+            </div>
             </div>
         
         
@@ -93,7 +102,36 @@
                                  попытавшись изобразить большие звёзды. Увы, это был очередной провал, 
                                  и на этот раз с меня хватит».
                 </p>
+                
         </article>
+        <div class="slider">
+            <div class="carousel_item"><img src="imagesVanGog/bridge.jpeg"></div>
+            <div class="carousel_item"><img src="imagesVanGog/heels.jpeg"></div>
+            <div class="carousel_item"><img src="imagesVanGog/puple.jpeg"></div>
+            <div class="carousel_item"><img src="imagesVanGog/forest.jpeg"></div>
+            <div class="carousel_item"><img src="imagesVanGog/trees.jpeg"></div>
+            <div class="carousel_item"><img src="imagesVanGog/room.jpeg"></div>
+        </div>
+        <!-- <div>
+            <div class="slider-nav">
+                <a class="active" data-slide-index="0"><img src="imagesVanGog/bridge.jpeg"></a>
+            </div>
+            <div>
+                <a class="active" data-slide-index="0"><img src="imagesVanGog/heels.jpeg"></a>
+            </div>
+            <div>
+                <a class="active" data-slide-index="0"><img src="imagesVanGog/puple.jpeg"></a>
+            </div>
+            <div>
+                <a class="active" data-slide-index="0"><img src="imagesVanGog/forest.jpeg"></a>
+            </div>
+            <div>
+                <a class="active" data-slide-index="0"><img src="imagesVanGog/trees.jpeg"></a>
+            </div>
+            <div>
+                <a class="active" data-slide-index="0"><img src="imagesVanGog/room.jpeg"></a>
+            </div>
+        </div> -->
         <div class="razryv"></div>
         <article class="m_liza" id="liza">         
                 <img src="images/image_2.jpg" alt="" class="liza_photo">
@@ -137,8 +175,16 @@
                        слегка волнистыми прядями. Зелёное платье в тонких сборках, с жёлтыми рукавами в складках, 
                        вырезано на белой невысокой груди. Голова слегка повёрнута.
                     </p>
-            
+                    
         </article>
+        <div class="slider">
+            <div class="carousel_item"><img src="imagesLeonardo/autoportret.jpeg"></div>
+            <div class="carousel_item"><img src="imagesLeonardo/mamasan.jpeg"></div>
+            <div class="carousel_item"><img src="imagesLeonardo/mamasan2.jpeg"></div>
+            <div class="carousel_item"><img src="imagesLeonardo/mamasan3.jpeg"></div>
+            <div class="carousel_item"><img src="imagesLeonardo/mamasan4.jpeg"></div>
+            <div class="carousel_item"><img src="imagesLeonardo/women.jpeg"></div>
+        </div>
         <div class="razryv"></div>
         <article class="m_jesus" id="jesus">            
                 <img src="images/image_3.jpg" alt="" class="jesus_photo">
@@ -179,9 +225,15 @@
                               Пётр и Иоанн, традиционно символизирующие надежду, веру и любовь,
                                в одеяниях соответствующих цветов — зелёного, жёлто-синего и красного.
                 </p>
-            
-        
         </article>
+        <div class="slider">
+            <div class="carousel_item"><img src="imagesRafael/3girl.jpeg"></div>
+            <div class="carousel_item"><img src="imagesRafael/autoportret2.jpeg"></div>
+            <div class="carousel_item"><img src="imagesRafael/girl.jpeg"></div>
+            <div class="carousel_item"><img src="imagesRafael/girl2.jpeg"></div>
+            <div class="carousel_item"><img src="imagesRafael/icon.jpeg"></div>
+            <div class="carousel_item"><img src="imagesRafael/man.jpeg"></div>
+        </div>
         <div class="razryv"></div>
         <article class="m_rain" id="rain">            
                 <img src="images/image_4.jpg" alt="" class="rain_photo">
@@ -226,9 +278,15 @@
                                 улавливает тягу к лирическому началу в противовес реалистической объективности.
                                  Улавливает, но остается верен себе.
                 </p>
-            
-            
         </article>
+        <div class="slider">
+            <div class="carousel_item"><img src="imagesShishkin/birch.jpeg"></div>
+            <div class="carousel_item"><img src="imagesShishkin/bor.jpeg"></div>
+            <div class="carousel_item"><img src="imagesShishkin/field.jpeg"></div>
+            <div class="carousel_item"><img src="imagesShishkin/shore.jpeg"></div>
+            <div class="carousel_item"><img src="imagesShishkin/swamp.jpeg"></div>
+            <div class="carousel_item"><img src="imagesShishkin/walk.jpeg"></div>
+        </div>
         <div class="razryv"></div>
         <article class="m_val" id="val">
             
@@ -269,9 +327,15 @@
                              Он вообще работал необычайно быстро и много: за всю свою жизнь он создал больше шести тысяч картин.
                               Достоевский сравнивал мариниста с писателем Александром Дюма-старшим, известным своей производительностью.
                 </p>
-            
-            
         </article>
+        <div class="slider">
+            <div class="carousel_item"><img src="imagesAivazovski/boat.jpeg"></div>
+            <div class="carousel_item"><img src="imagesAivazovski/house.jpeg"></div>
+            <div class="carousel_item"><img src="imagesAivazovski/jetty.jpeg"></div>
+            <div class="carousel_item"><img src="imagesAivazovski/sea.jpeg"></div>
+            <div class="carousel_item"><img src="imagesAivazovski/ship.jpeg"></div>
+            <div class="carousel_item"><img src="imagesAivazovski/water.jpeg"></div>
+        </div>
     </main>
     <div class="razryv"></div>
     <article class="end" id="contact">
