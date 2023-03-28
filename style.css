@@ -44,8 +44,7 @@ h1 {
 p{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navigator_list{  
-    
+.navigator_list{   
     display: flex;
     /* justify-content: space-between; */
     gap: 2vw;
@@ -62,39 +61,26 @@ a{
 }
 
 /* karuseli */
+
 .bx-wrapper {
-    width: 775px;
-    background-color: rgb(252, 254, 255);
-}
-.carousel_item{
-    display: flex !important; 
-    margin: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 .slider{
-    display: flex !important; 
-    padding: 3%;
-    align-items: center;
+    background-image: url(images/paper.jpg);
+    background-attachment: fixed;
+    display: flex;
+    
 }
-/* .slider-nav > div {
-    float: left;
-    border: 3px solid #fff;
-}
-
-.slider-nav > div a {
-    display: block;
-    cursor: pointer;
-}
-
-.slider-nav > div a.active {
-    border-bottom: 3px solid #000;
-} */
 
 /* Star night  */
 
 .star_photo{
     width:25%;
     float: left;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .text_star{
     float:right; 
@@ -125,7 +111,7 @@ a{
 .liza_photo{
     width:20%;
     float: left;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .text_liza{
     float:right; 
@@ -157,7 +143,7 @@ a{
 .jesus_photo{
     width:20%; 
     float: left;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .text_jesus{
     float:right; 
@@ -188,7 +174,7 @@ a{
 .rain_photo{
     width:20%; 
     float: left;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .m_rain{
     display: inline-block;
@@ -219,7 +205,7 @@ a{
 .val_photo{
     width:20%; 
     float: left;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .m_val{
     display: inline-block;
@@ -254,19 +240,18 @@ a{
 }
 .importent{
     display: flex;   
-    color: #fff;
+    color: #fffdfd;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 .text_used{
     float: right;
     margin: 4px 4px 4px 0; 
-    width:40%; 
-    height:70%;
+    width:60%; 
+    height:100%;
     font-size: 110%;  
-    color: #fff;
-    justify-content: center;
-    align-items: center;
+    color: #fff9f9;
+   
 }
 .text_contact{
     list-style: none; 
@@ -275,13 +260,12 @@ a{
     height:100%;
     font-size: 110%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
+    color: #fffefe;
+    
 }
 .reges{ 
     float: right;
-    color: #fff;
+    color: #000000;
 }
 footer{
     background-color:rgb(224, 245, 245);
@@ -339,12 +323,61 @@ form {
         font-size: 36px;
         margin-bottom: 15px;
     }
-}
-@media (max-width: 800px){ 
-    nav {
-        width: 70%;
+    .text_used {
+        float: none;
+        width:100%;
+        padding: 10px;
     }
+    .text_contact {
+        padding: 10px;
+        width:100%;
+    }
+}
+@media (max-width: 850px){ 
+    nav {
+        width: 90%;
+    }
+    .star_photo {
+        float: none;
+        width:40%;
+       }
+       .liza_photo {
+        float: none;
+        width:40%;
+       }
+       .jesus_photo {
+        float: none;
+        width:40%;
+       }
+       .rain_photo {
+        float: none;
+        width:40%;
+       }
+       .val_photo {
+        float: none;
+        width:40%;
+       }
+    .text_star {
+        float: none;
+        width:100%;
    }
+   .text_val {
+    float: none;
+    width:100%;
+   }
+   .text_liza {
+    float: none;
+    width:100%;
+   }
+   .text_jesus {
+    float: none;
+    width:100%;
+   }
+   .text_rain {
+    float: none;
+    width:100%;
+   }
+}
   @media (max-width: 700px) {
     .menu-btn {
         width: 30px;
@@ -354,8 +387,8 @@ form {
         overflow: hidden;
     }
     .menu-btn span {
-        width: 30px;
-        height: 2px;
+        width: 60%;
+        height: 3px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -375,10 +408,16 @@ form {
         left: 0;
         width: 40%;
         height: 100%;
-        padding: 15px;
-      background: #FFEFBA;
+        padding: 5px;
+      background: #ebebeb;
         transform: translateX(-100%);
         transition: transform 0.5s; 
+       
+    }
+    .navigator_list{
+        display: block;
+        padding: 5px;
+        
     }
     .menu.active {
         transform: translateX(0);
